@@ -26,3 +26,23 @@ function studentINfo(name, roll, id, clas, age, shift) {
   }
 
 }
+
+
+// -------------------button a click korle result show korbe 
+
+function handlebutton (){
+  let name = document.querySelector('.name')
+  let Roll = document.querySelector('.Roll')
+  let Id = document.querySelector('.Id')
+  let Class = document.querySelector('.Class')
+  let Age = document.querySelector('.Age')
+  let Shift = document.querySelector('.Shift')
+
+
+
+
+
+
+
+  
+}
