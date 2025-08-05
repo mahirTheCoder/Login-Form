@@ -50,10 +50,27 @@ if(!name.value || !Roll.value || !Id.value || !Class.value || !Age.value || !Shi
    Age.style.border = '2px solid red'
    Shift.style.border = '2px solid red'
 
+
+  //  setTimeout(()=>{
+  //  name.style.border = ''
+  //  Roll.style.border = ''
+  //  Id.style.border = ''
+  //  Class.style.border = ''
+  //  Age.style.border = ''
+  //  Shift.style.border = ''
+  //  },2000)
+   return;
 }
 
+// ----------------constractor fun er data push a add kora 
 
+const newUserData = new studentINfo(name, roll, id, clas, age, shift);
+ addConstarctorData.push(newUserData);
 
-
+printAllData()
 
 }
+
+// ------------------data print hwr functions 
+
+
