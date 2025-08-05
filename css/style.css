@@ -22,7 +22,7 @@ body {
 .form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
   max-width: 600px;
   /* margin: 0 auto 100px; */
@@ -31,24 +31,26 @@ body {
   border-radius: 20px;
   background: #e0e0e0;
   box-shadow: -11px 11px 22px #bebebe, 11px -11px 22px #ffffff;
-  
+
 }
 
-.form h2 {
+.header h2 {
   text-transform: uppercase;
   font-family: 'Comfortaa', cursive;
   font-weight: 900;
   font-size: 24px;
   letter-spacing: 2px;
   padding-bottom: 20px;
-  text-shadow: 1px 1px 1px  #000000c3;
+  text-shadow: 1px 1px 1px #000000c3;
 
 }
 
 .mainbox {
   padding: 30px 30px;
-  background: rgba(245, 245, 245, 0.381);
+  background: rgba(245, 245, 245, 0.286);
   border-radius: 10px;
+  margin-bottom: 45px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .mainbox p {
@@ -77,7 +79,7 @@ body {
   display: flex;
   font-size: 14px;
   font-weight: 200;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   font-family: 'Comfortaa', cursive;
 
 }
@@ -93,6 +95,7 @@ body {
   box-sizing: border-box;
   font-size: 14px;
   font-family: 'Comfortaa', cursive;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 }
 
@@ -110,17 +113,12 @@ body {
   display: flex;
   font-size: 14px;
   font-weight: 200;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-family: 'Comfortaa', cursive;
 
 }
 
 .inputtwo input {
-  display: flex;
-  font-size: 14px;
-  font-weight: 200;
-  margin-bottom: 5px;
-  font-family: 'Comfortaa', cursive;
   outline: 0;
   background: #e0e0e0;
   width: 100%;
@@ -131,7 +129,7 @@ body {
   box-sizing: border-box;
   font-size: 14px;
   font-family: 'Comfortaa', cursive;
-
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 
@@ -156,8 +154,9 @@ input[type=number] {
   text-transform: uppercase;
   outline: 0;
   background: #e0e0e0;
-  border: 0;
-  border-radius: 8px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
   color: #000;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
@@ -166,6 +165,8 @@ input[type=number] {
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 20px 30px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
 }
 
 .rsultBox {
@@ -177,16 +178,39 @@ input[type=number] {
 .rsultBox h2 {
   font-size: 20px;
   font-family: 'Comfortaa', cursive;
-  font-weight: 300;
-  margin: 0;
+  font-weight: 300 !important;
+  margin-top: 46px;
+  text-transform: uppercase;
+
 }
 
 
-.rsultBox p{
+.rsultBox p {
   font-size: 14px;
   font-weight: normal;
   font-family: 'Comfortaa', cursive;
   margin: 0;
 }
 
+.showStudent {
+  padding: 20px;
+  /* padding: 20px 20px; */
+  background: #f9f9f924;
+  /* নিচের প্রোপার্টিগুলো রিমুভ করুন (যদি থাকে) */
+  display: block !important;
+  text-align: left !important;
+  margin-bottom: 20px;
+  border-radius: 20px;
+box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; 
+margin-top: 40px;
+padding-left: 30px;
+}
 
+.showStudent p {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-family: 'Comfortaa', cursive;
+  color: #395591;
+
+}

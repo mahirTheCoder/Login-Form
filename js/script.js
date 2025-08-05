@@ -1,76 +1,120 @@
-// ---------fisrt step constractor er data push method a neyar jonno array creat 
+
+
+// ---------first step: array to store data
 const addConstarctorData = [];
 
-
-// -----------sceond step constructor functions 
+// ---------second step: constructor function
 function studentINfo(name, roll, id, clas, age, shift) {
-
   this.name = name;
   this.roll = roll;
   this.id = id;
-  this.class = clas;
+  this.clas = clas;
   this.age = age;
-  this.sfift = shift;
+  this.shift = shift;
 
-  this.UserdataCatch = function () {
+  this.UserdataCatch = function() {
+    return `
+      <div class="showStudent">
+        <p>Student name: ${this.name}</p>
+        <p>Roll: ${this.roll}</p>
+        <p>I'D: ${this.id}</p>
+        <p>Class: ${this.clas}</p>
+        <p>Age: ${this.age}</p>
+        <p>Shift: ${this.shift}</p>
+      </div>
+    `;
+  }
+}
 
-    return `         <div class="showStudent">
-              <p>Studdent name: ${this.name}</p>
-              <p>Roll: ${this.roll}</p>
-              <p>I'D: ${this.roll}</p>
-              <p>Class: ${this.clas} </p>
-              <p>Age: ${this.age}</p>
-              <p>Shift: ${this.shift}</p>
-          </div>`;
+// ফাংশন: সব ইনপুট ফিল্ডের বর্ডার রিসেট করতে
+function resetInputBorders() {
+  const inputs = document.querySelectorAll('.login-form input');
+  inputs.forEach(input => {
+    input.style.border = ''; // ডিফল্ট বর্ডার স্টাইল ফিরিয়ে আনে
+  });
+}
 
+// -------------------button click handler
+function handlebutton() {
+  const nameInput = document.querySelector('.name');
+  const rollInput = document.querySelector('.Roll');
+  const idInput = document.querySelector('.Id');
+  const clasInput = document.querySelector('.Class');
+  const ageInput = document.querySelector('.Age');
+  const shiftInput = document.querySelector('.Shift');
+
+  const name = nameInput.value;
+  const roll = rollInput.value;
+  const id = idInput.value;
+  const clas = clasInput.value;
+  const age = ageInput.value;
+  const shift = shiftInput.value;
+
+  // ---------------error handling
+  if(!name || !roll || !id || !clas || !age || !shift) {
+    // শুধু খালি ফিল্ডে রেড বর্ডার যোগ করবে
+    if(!name) nameInput.style.border = '2px solid red';
+    if(!roll) rollInput.style.border = '2px solid red';
+    if(!id) idInput.style.border = '2px solid red';
+    if(!clas) clasInput.style.border = '2px solid red';
+    if(!age) ageInput.style.border = '2px solid red';
+    if(!shift) shiftInput.style.border = '2px solid red';
+    
+    return;
   }
 
+  // সব ঠিক থাকলে বর্ডার রিসেট করবে
+  resetInputBorders();
+
+  // ----------------add data to array
+  const newUserData = new studentINfo(name, roll, id, clas, age, shift);
+  addConstarctorData.push(newUserData);
+  
+  printAllData();
 }
 
 
-// -------------------button a click korle result show korbe 
-
-function handlebutton (){
-  let name = document.querySelector('.name')
-  let Roll = document.querySelector('.Roll')
-  let Id = document.querySelector('.Id')
-  let Class = document.querySelector('.Class')
-  let Age = document.querySelector('.Age')
-  let Shift = document.querySelector('.Shift')
 
 
-// ---------------error handleing 
-
-if(!name.value || !Roll.value || !Id.value || !Class.value || !Age.value || !Shift.value){
-  // alert('click hocche')
-   name.style.border = '2px solid red'
-   Roll.style.border = '2px solid red'
-   Id.style.border = '2px solid red'
-   Class.style.border = '2px solid red'
-   Age.style.border = '2px solid red'
-   Shift.style.border = '2px solid red'
 
 
-  //  setTimeout(()=>{
-  //  name.style.border = ''
-  //  Roll.style.border = ''
-  //  Id.style.border = ''
-  //  Class.style.border = ''
-  //  Age.style.border = ''
-  //  Shift.style.border = ''
-  //  },2000)
-   return;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------------print all data
+function printAllData() {
+  let resultBox = document.querySelector('.resultBox');
+  let noStudentMsg = document.getElementById('noStudentMsg');
+  
+  // Remove "no student founded" message
+  if(noStudentMsg) {
+    noStudentMsg.remove();
+  }
+
+  resultBox.innerHTML = '<h2>List Of Students</h2>';
+
+  // -------------------print all data from array
+  addConstarctorData.forEach(user => {
+    resultBox.innerHTML += user.UserdataCatch();
+  });
+
+  // Clear input fields
+  document.querySelector('.name').value = '';
+  document.querySelector('.Roll').value = '';
+  document.querySelector('.Id').value = '';
+  document.querySelector('.Class').value = '';
+  document.querySelector('.Age').value = '';
+  document.querySelector('.Shift').value = '';
 }
-
-// ----------------constractor fun er data push a add kora 
-
-const newUserData = new studentINfo(name, roll, id, clas, age, shift);
- addConstarctorData.push(newUserData);
-
-printAllData()
-
-}
-
-// ------------------data print hwr functions 
-
-
