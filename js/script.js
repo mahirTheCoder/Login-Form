@@ -39,10 +39,21 @@ function handlebutton (){
   let Shift = document.querySelector('.Shift')
 
 
+// ---------------error handleing 
+
+if(!name.value || !Roll.value || !Id.value || !Class.value || !Age.value || !Shift.value){
+  // alert('click hocche')
+   name.style.border = '2px solid red'
+   Roll.style.border = '2px solid red'
+   Id.style.border = '2px solid red'
+   Class.style.border = '2px solid red'
+   Age.style.border = '2px solid red'
+   Shift.style.border = '2px solid red'
+
+}
 
 
 
 
 
-  
 }
