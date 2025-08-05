@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+  background: #e0e0e0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.login {
+
+  padding: 30px 20px;
+  margin: auto;
+  font-family: 'Comfortaa', cursive;
+  border-radius: 20px;
+
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: -11px 11px 22px #bebebe, 11px -11px 22px #ffffff;
+
+}
+
+/* .form input {
+  outline: 0;
+  background: #e0e0e0;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.form input:focus {
+  background: #e0e0e0;
+}
+
+.form button {
+  font-family: 'Comfortaa', cursive;
+  text-transform: uppercase;
+  outline: 0;
+  background: #e0e0e0;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:active {
+  background: #395591;
+} */
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+.mainbox {
+  padding: 20px 20px;
+  background: rgba(245, 245, 245, 0.381);
+  border-radius: 20px;
+}
+
+.mainbox p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #395591;
+  text-transform: capitalize;
+  font-family: 'Comfortaa', cursive;
+
+
+}
+
+.inputBoth {
+  display: flex;
+  justify-content: center;
+
+}
+
+.inputONe {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.inputONe label {
+  display: flex;
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 5px;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+.inputONe input {
+  outline: 0;
+  background: #e0e0e0;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+.inputONe input:focus{
+    background: #e0e0e0;
+
+}
+
+.inputtwo{
+    display: flex;
+  flex-direction: column;
+}
+
+.inputtwo label {
+  display: flex;
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 5px;
+  font-family: 'Comfortaa', cursive;
+
+}
+
+.inputtwo input {
+  display: flex;
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 5px;
+  font-family: 'Comfortaa', cursive;
+    outline: 0;
+  background: #e0e0e0;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+
+}
