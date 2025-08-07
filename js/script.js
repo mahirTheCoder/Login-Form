@@ -16,11 +16,11 @@ function studentINfo(name, roll, id, clas, age, shift) {
     return `
       <div class="showStudent">
         <p>Student name: ${this.name}</p>
-        <p>Roll: ${this.roll}</p>
-        <p>I'D: ${this.id}</p>
+        <p>Student Roll: ${this.roll}</p>
+        <p>User I'D: ${this.id}</p>
         <p>Class: ${this.clas}</p>
-        <p>Age: ${this.age}</p>
-        <p>Shift: ${this.shift}</p>
+        <p>Student Age: ${this.age}</p>
+        <p>Shift Name: ${this.shift}</p>
       </div>
     `;
   }
@@ -72,26 +72,6 @@ function handlebutton() {
   
   printAllData();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // ------------------print all data
 function printAllData() {

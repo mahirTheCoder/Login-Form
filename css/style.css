@@ -194,16 +194,14 @@ input[type=number] {
 
 .showStudent {
   padding: 20px;
-  /* padding: 20px 20px; */
   background: #f9f9f924;
-  /* নিচের প্রোপার্টিগুলো রিমুভ করুন (যদি থাকে) */
   display: block !important;
   text-align: left !important;
   margin-bottom: 20px;
   border-radius: 20px;
-box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; 
-margin-top: 40px;
-padding-left: 30px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  margin-top: 40px;
+  padding-left: 30px;
 }
 
 .showStudent p {
